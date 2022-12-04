@@ -1,4 +1,4 @@
-import {INPUT} from './actions';
+import {INPUT, EXPAND_EDITOR, EXPAND_PREVIEWER, NORMALIZE} from './actions';
 
 const initialState = `# Welcome to my React Markdown Previewer!
 
@@ -52,4 +52,17 @@ export const inputReducer = (state = initialState, action) => {
         default:
             return state;
     }
+}
+
+export const viewReducer = (state = 'NORMAL', action) => {
+	switch (action.type) {
+		case EXPAND_EDITOR:
+			return 'EDITOR';
+		case EXPAND_PREVIEWER:
+			return 'PREVIEWER';
+		case NORMALIZE:
+			return 'NORMAL';
+		default:
+			return state;
+	}
 }

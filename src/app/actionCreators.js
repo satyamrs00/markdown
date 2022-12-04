@@ -7,4 +7,10 @@ const inputCreator = (input) => {
     }
 }
 
+export const viewCreator = (view) => {
+    return {
+        type: view
+    }
+}
+
 export default inputCreator;
