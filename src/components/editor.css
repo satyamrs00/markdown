@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Russo+One);
+
 #editor-wrapper {
     padding: 0px;
     margin: 1rem 0px;
@@ -19,12 +21,28 @@
     font-family: 'Russo One', sans-serif;
     background-color: #4AA3A3;
     font-size: large;
-    font-weight: bold;
     border: 1px solid #000000;
     border-width: 1px 1px 0px 1px;
     flex-basis: 100%;
     padding: 0.3rem 0.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    align-content: stretch;
 }
+.header svg {
+    margin-right: 0.5rem;
+}
+.expand {
+    transform: rotate(45deg);
+    margin-left: auto;
+    cursor: pointer;
+}
+.expand:hover {
+    color: #57E2B1;
+}
+
+
 @media screen and (min-width: 768px) {
     #editor {
         width: 60vw;
