@@ -1,0 +1,41 @@
+#previewer {
+    padding: 0px;
+    margin: 1rem 0px;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#preview {
+    background-color: #C0D8D8;
+    margin: 0px;
+    padding: 0.5rem;
+    border: 1px solid #000000;
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    #preview {
+        width: 80vw;
+    }    
+}
+@media screen and (min-width: 1024px) {
+    #preview {
+        width: 70vw;
+    }    
+}
+@media screen and (min-width: 1280px) {
+    #preview {
+        width: 60vw;
+    }    
+}
+@media screen and (min-width: 1440px) {
+    #preview {
+        width: 55vw;
+    }    
+}
+@media screen and (max-width: 768px) {
+    #preview {
+        width: 95vw;
+    }    
+}
